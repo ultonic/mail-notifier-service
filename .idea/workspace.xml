@@ -11,8 +11,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Contracts/QueueInterface.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Foundations/AbstractMailerProvider.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Foundations/AbstractQueueProvider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Foundations/MailMessage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Foundations/MailMessageBase.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Utils/BeanstalkdService.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Utils/MailHandler.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Utils/MailMessage.php" />
@@ -21,6 +19,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/mail/create.html.twig" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/mail/list.html.twig" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/translations/validators.ru.xlf" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Foundations/MailMessage.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Foundations/MailMessageBase.php" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MailQueueController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MailQueueController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/MailQueueController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
+            <state relative-caret-position="889">
               <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding>
                 <element signature="e#34#60#0#PHP" expanded="true" />
@@ -116,7 +116,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MailMessage.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MailMessage.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Utils/MailMessage.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
@@ -577,7 +577,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -953,14 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils/MailMessage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/StartMailWorkerCommand.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="597">
@@ -1017,11 +1009,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/MailQueueController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
+        <state relative-caret-position="889">
           <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="e#34#60#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils/MailMessage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
