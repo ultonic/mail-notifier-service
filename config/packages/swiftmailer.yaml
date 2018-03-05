@@ -1,0 +1,4 @@
+swiftmailer:
+    transport:            smtp
+    host:                 localhost
+    port:                 1025

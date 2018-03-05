@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2 class="page-header">Список шаблонов</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Дата изменения</th>
+                <th>Код шаблона</th>
+                <th>Тип контента</th>
+                <th>Тема</th>
+                <th>Шаблон</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for template in templates %}
+                <tr>
+                    <td>{{ template.id }}</td>
+                    <td>{{ template.modifiedAt | date('d-m-Y H:i:s')}}</td>
+                    <td>{{ template.code }}</td>
+                    <td>{{ template.dataType }}</td>
+                    <td>{{ template.subject }}</td>
+                    <td>{{ template.body }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="/mail/add" class="btn btn-primary" style="margin: 0px 0px 10px 0px; color: #fff;">Добавить шаблон</a>
+{% endblock %}
